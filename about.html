@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="關於北藝大 GeoGuessr - 一個有趣的校園地理猜謎遊戲">
+    <meta name="keywords" content="北藝大, GeoGuessr, 臺北藝術大學, 地理猜謎">
+    <meta name="author" content="StarAtt">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="關於 - 北藝大 GeoGuessr">
+    <meta property="og:description" content="關於北藝大 GeoGuessr - 一個有趣的校園地理猜謎遊戲">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://staratt.cc/tnua-geoguessr/about.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="關於 - 北藝大 GeoGuessr">
+    <meta name="twitter:description" content="關於北藝大 GeoGuessr - 一個有趣的校園地理猜謎遊戲">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <title>關於 - 北藝大 GeoGuessr</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 90%;
+            max-width: 800px;
+            margin: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .content h2 {
+            color: #667eea;
+            margin: 20px 0 10px;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #764ba2;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                margin: 10px;
+                padding: 20px;
+            }
+
+            .title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">關於北藝大 GeoGuessr</h1>
+        </div>
+
+        <div class="content">
+            <h2>遊戲介紹</h2>
+            <p>北藝大 GeoGuessr 是一個基於 GeoGuessr 概念的校園地理猜謎遊戲。玩家要根據圖片，在校園地圖上標示出照片拍攝的具體位置（越精準越好，差一點點沒關係）。</p>
+
+            <h2>遊戲玩法</h2>
+            <p>1. 每回合會顯示一張校園內的照片</p>
+            <p>2. 每張照片都附有提示，可以點擊「顯示提示」按鈕查看
+            <p>3. 點擊地圖上你認為照片拍攝的位置（看不清楚請自行放大）</p>
+            <p>4. 點擊「確定」按鈕提交答案</p>
+            <p>5. 如果猜測位置在正確位置的容許範圍內，即可得分</p>
+
+            <h2>關於開發者</h2>
+            <p>做音樂、寫程式、不務正業的應屆畢業生。</p>
+
+            <a href="index.html" class="btn">開始遊戲</a>
+        </div>
+
+        <footer class="footer">
+            <p>© 2025 <a href="https://staratt.cc" target="_blank">StarAtt</a> | <a href="index.html">返回遊戲</a></p>
+        </footer>
+    </div>
+</body>
+</html> 
