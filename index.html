@@ -382,6 +382,7 @@
                 this.userGuess = null;
                 this.hasGuessed = false;
                 this.tolerance = 30; // pixels
+                this.preloadedImages = new Map(); // Store preloaded images
                 
                 // Sample questions with demo images and coordinates
                 this.questions = [
@@ -522,6 +523,7 @@
                 this.loadQuestion();
                 this.setupEventListeners();
                 this.updateUI();
+                this.preloadNextImages(); // Start preloading images
             }
 
             setupEventListeners() {
@@ -645,12 +647,28 @@
                 feedback.className = `feedback ${type}`;
             }
 
+            preloadNextImages() {
+                // Preload next 3 images
+                for (let i = 1; i <= 3; i++) {
+                    const nextIndex = this.currentQuestion + i;
+                    if (nextIndex < this.questions.length) {
+                        const nextQuestion = this.questions[nextIndex];
+                        if (!this.preloadedImages.has(nextQuestion.image)) {
+                            const img = new Image();
+                            img.src = nextQuestion.image;
+                            this.preloadedImages.set(nextQuestion.image, img);
+                        }
+                    }
+                }
+            }
+
             nextQuestion() {
                 this.currentQuestion++;
                 document.getElementById('next-btn').style.display = 'none';
                 document.getElementById('submit-btn').style.display = 'inline-block';
                 this.loadQuestion();
                 this.updateUI();
+                this.preloadNextImages(); // Preload images for next questions
             }
 
             showGameOver() {
