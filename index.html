@@ -347,7 +347,7 @@
             <div class="question-panel">
                 <h2 class="question-title">這在哪裡？</h2>
                 <img id="question-image" class="question-image" src="" alt="Location to guess">
-                <button id="show-hint-btn" class="btn btn-hint">顯示提示</button>
+                <button id="show-hint-btn" class="btn btn-hint">提示</button>
                 <p id="question-text" class="question-text" style="visibility: hidden;"></p>
             </div>
 
@@ -437,7 +437,7 @@
                     },
                     {
                         image: '11.jpg',
-                        text: '後面有開闊的視野',
+                        text: '上面適合一直走路',
                         answer: { x: 191, y: 96 }
                     },
                     {
@@ -452,7 +452,7 @@
                     },
                     {
                         image: '14.jpg',
-                        text: '很新',
+                        text: '這裡不會淋到雨',
                         answer: { x: 192, y: 108 }
                     },
                     {
@@ -462,13 +462,13 @@
                     },
                     {
                         image: '16.jpg',
-                        text: '不走正門走這裡',
-                        answer: { x: 165, y: 207 }
+                        text: '附近有步道',
+                        answer: { x: 147, y: 189 }
                     },
                     {
                         image: '17.jpg',
-                        text: '不遠處有餐廳',
-                        answer: { x: 168, y: 255 }
+                        text: '常常過馬路的地方',
+                        answer: { x: 78, y: 252 }
                     },
                     {
                         image: '18.jpg',
@@ -477,23 +477,23 @@
                     },
                     {
                         image: '19.jpg',
-                        text: '有烏龜',
-                        answer: { x: 63, y: 211 }
+                        text: '外面有烏龜曬太陽',
+                        answer: { x: 53, y: 194 }
                     },
                     {
                         image: '20.jpg',
-                        text: '週日不會開',
-                        answer: { x: 53, y: 196 }
+                        text: '很多系一起的建築',
+                        answer: { x: 267, y: 352 }
                     },
                     {
                         image: '21.jpg',
-                        text: '剛好正門的反射疊在上面',
+                        text: '從吃飯的地方看上下樓的地方',
                         answer: { x: 148, y: 300 }
                     },
                     {
                         image: '22.jpg',
-                        text: '登頂的路上',
-                        answer: { x: 217, y: 58 }
+                        text: '地上有黑白天鵝',
+                        answer: { x: 147, y: 329 }
                     },
                     {
                         image: '23.jpg',
@@ -507,7 +507,7 @@
                     },
                     {
                         image: '25.jpg',
-                        text: '很少人的地方',
+                        text: '看得到海',
                         answer: { x: 214, y: 36 }
                     }
                 ];
@@ -538,7 +538,7 @@
                 showHintBtn.addEventListener('click', () => {
                     const questionText = document.getElementById('question-text');
                     questionText.style.visibility = questionText.style.visibility === 'hidden' ? 'visible' : 'hidden';
-                    showHintBtn.textContent = questionText.style.visibility === 'hidden' ? '顯示提示' : '隱藏提示';
+                    // showHintBtn.textContent = questionText.style.visibility === 'hidden' ? '顯示提示' : '隱藏提示';
                 });
             }
 
