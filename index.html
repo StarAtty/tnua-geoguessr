@@ -384,6 +384,11 @@
                 this.tolerance = 30; // pixels
                 this.preloadedImages = new Map(); // Store preloaded images
                 
+                // Preload pin image
+                const pinImg = new Image();
+                pinImg.src = 'favicon-32x32.png';
+                this.preloadedImages.set('pin', pinImg);
+                
                 // Sample questions with demo images and coordinates
                 this.questions = [
                     {
@@ -408,8 +413,8 @@
                     },
                     {
                         image: '5.jpg',
-                        text: '不遠處有公車站',
-                        answer: { x: 69, y: 165 }
+                        text: '在樓梯前面',
+                        answer: { x: 69, y: 161 }
                     },
                     {
                         image: '6.jpg',
@@ -424,7 +429,7 @@
                     {
                         image: '8.jpg',
                         text: '附近有下山的小路',
-                        answer: { x: 299, y: 417 }
+                        answer: { x: 315, y: 431 }
                     },
                     {
                         image: '9.jpg',
@@ -443,8 +448,8 @@
                     },
                     {
                         image: '12.jpg',
-                        text: '常常會聽到鼓聲',
-                        answer: { x: 195, y: 48 }
+                        text: '前面是停車場',
+                        answer: { x: 223, y: 390 }
                     },
                     {
                         image: '13.jpg',
@@ -463,8 +468,8 @@
                     },
                     {
                         image: '16.jpg',
-                        text: '附近有步道',
-                        answer: { x: 147, y: 189 }
+                        text: '附近的建築有七樓',
+                        answer: { x: 146, y: 202 }
                     },
                     {
                         image: '17.jpg',
@@ -488,8 +493,8 @@
                     },
                     {
                         image: '21.jpg',
-                        text: '從吃飯的地方看上下樓的地方',
-                        answer: { x: 148, y: 300 }
+                        text: '要走不一樣的路',
+                        answer: { x: 211, y: 461 }
                     },
                     {
                         image: '22.jpg',
@@ -504,7 +509,7 @@
                     {
                         image: '24.jpg',
                         text: '半夜很暗',
-                        answer: { x: 165, y: 320 }
+                        answer: { x: 165, y: 319 }
                     },
                     {
                         image: '25.jpg',
